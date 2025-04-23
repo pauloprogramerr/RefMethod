@@ -1,5 +1,7 @@
 package non.inference;
 
+import java.util.stream.Stream;
+
 public class MainTest {
     private String m;
     public MainTest (String m) {
@@ -7,7 +9,11 @@ public class MainTest {
     }
 
     public static void testTestando(){
-        System.out.println (    "tst");
+        Stream<String> test = Stream.of("testando");
+        test.map ( s -> s.length ())
+                .distinct ()
+                .sorted ()
+                .forEach (System.out::println);
     }
 
     public static void main(String[] args) {
