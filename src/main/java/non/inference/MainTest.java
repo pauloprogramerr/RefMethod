@@ -12,5 +12,7 @@ public class MainTest {
         MainTest m = new MainTest ("Hello");
         System.out.println (m.m);
 
+        MainTest mainTest = new MainTest ();
+        System.out.println (mainTest);
     }
 }
