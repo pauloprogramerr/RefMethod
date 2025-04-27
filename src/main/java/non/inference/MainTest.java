@@ -20,5 +20,12 @@ public class MainTest {
         MainTest m = new MainTest ("Hello");
         System.out.println (m.m);
         testTestando ();
+
+        MergingTwoLists mg = new MergingTwoLists ();
+        mg.passList ();
+        System.out.println ();
+
+        RecursiveLambdaExpression re = new RecursiveLambdaExpression ();
+        re.recurive ();
     }
 }
