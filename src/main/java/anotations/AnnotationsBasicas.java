@@ -2,7 +2,7 @@ package anotations;
 
 import java.util.ArrayList;
 
-public class AnotationsBasicas {
+class AnotationsBasicas {
 
 @SuppressWarnings ("unchecked") // Supressão de advertências de compilador.java
 public void exemploWarning() {
