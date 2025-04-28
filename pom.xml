@@ -22,8 +22,47 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.33</version>
     </dependency>
+      <dependency>
+          <groupId>com.rifa</groupId>
+          <artifactId>Java_Functional_Programing</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.34</version>
+    </dependency>
+    <dependency>
+      <groupId>cc.javaone.jpa</groupId>
+      <artifactId>jpa-common</artifactId>
+      <version>1.0.0.RELEASE</version>
+    </dependency>
+
+      <!-- Spring Boot Starter Web (para REST e MVC) -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>3.3.4</version>
+      </dependency>
+
+      <!-- Spring Boot Starter Test (para testes) -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+      </dependency>
+
+    <dependency>
+      <groupId>org.mvnpm.at.ampproject</groupId>
+      <artifactId>remapping</artifactId>
+      <version>2.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
-
-
 </project>
 
