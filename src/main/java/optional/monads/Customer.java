@@ -9,6 +9,10 @@ public class Customer {
         this.id = id;
         this.name = name;
     }
+    public Customer(){ // deverar ser retirado
+
+    }
+
     public int getId() {
         return id;
     }

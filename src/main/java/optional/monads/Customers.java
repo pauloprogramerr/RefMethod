@@ -49,6 +49,7 @@ public class Customers {
         customers.addCustomer(customer2.getId(), customer2);
         customers.addCustomer(customer3.getId(), customer3);
 
+        Customer customer = new Customer(); // foi adicionado para amenizar o erro
         if (customer.getName().equals("Mary")) { // fazer a correção
             System.out.println("Processing Mary");
         }
