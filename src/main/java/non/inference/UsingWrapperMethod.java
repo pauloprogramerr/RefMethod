@@ -1,6 +1,7 @@
 package non.inference;
 
 public class UsingWrapperMethod {
+
     public int arrayTotal(int[] number, int index ){
         if (index == 0) {
             return number[0];
@@ -11,6 +12,7 @@ public class UsingWrapperMethod {
     }
 
     public int totalHelper(int[] number, int index) {
+
         if (index >= 0 && index <= number.length - 1) {
             return number[index] + totalHelper (number, index - 1);
         }
@@ -21,6 +23,7 @@ public class UsingWrapperMethod {
     }
 
     public void inOrder(Node node) {
+
         if (node == null) {
             return;
         }else {

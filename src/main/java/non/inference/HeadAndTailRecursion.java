@@ -14,7 +14,7 @@ public class HeadAndTailRecursion {
             return;
         }
         head (phrase.substring (1));
-        //System.out.print (phrase.charAt (0));
+        //System.out.print (phrase.charAt (0)); não testado com a troca feita
         System.out.println(phrase);
 
     }

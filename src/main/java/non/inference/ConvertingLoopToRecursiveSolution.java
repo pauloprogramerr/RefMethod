@@ -8,6 +8,7 @@ public class ConvertingLoopToRecursiveSolution {
         }
         System.out.println ("Sum of numbers from 2 to 20: " + sum);
     }
+    // test
 
     /*
     *  A recursive solution follows. It is passed an integer, n, which is checked to determine

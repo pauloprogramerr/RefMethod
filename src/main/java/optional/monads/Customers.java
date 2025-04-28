@@ -9,9 +9,11 @@ public class Customers {
     public Customers() {
         customers = new HashMap<>();
     }
+
     public void addCustomer(int id, Customer customer) {
         customers.put (id, customer);
     }
+
     public Customer findCustomerWithId(int id) {
         if(customers.containsKey (id)){
             return customers.get (id);
@@ -20,6 +22,7 @@ public class Customers {
         return null;
         }
     }
+
     public Optional<Customer> findOptionalCustomerWithId(int id) {
         if (customers.containsKey (id)) {
             return Optional.of (customers.get (id));
@@ -46,7 +49,7 @@ public class Customers {
         customers.addCustomer(customer2.getId(), customer2);
         customers.addCustomer(customer3.getId(), customer3);
 
-        if (customer.getName().equals("Mary")) {
+        if (customer.getName().equals("Mary")) { // fazer a correção
             System.out.println("Processing Mary");
         }
     }

@@ -12,12 +12,11 @@ public class UnderstandingTheOrdering {
     public void hourstThatAreGreaterThan40() {
 
         /* However, the list is not sorted */
-
         hours.parallelStream ()
                 .filter (s -> s > 40)
                // .sorted ()
                 .forEach (System.out::println);
-        System.out.println ("---------------------");
+        System.out.println ();
 
         /*
          *  The order will vary with each execution because each parallel stream sorted
@@ -30,7 +29,7 @@ public class UnderstandingTheOrdering {
                 .filter (s -> s > 40)
                 .sorted ()
                 .forEachOrdered (System.out::println);
-        System.out.println ("---------------------");
+        System.out.println ();
     }
     /** Parallel operations can significantly improve the performance of an application,
      allowing us to take full advantage of multiple processors. However, care must be taken

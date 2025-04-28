@@ -6,7 +6,7 @@ public class RecursionTechniquesInJava8 {
 
         /*  iterative solution for the factorial of 5   */
         long fact = 1;
-        for(int i=1; i<=5; i++) {
+        for(int i=1; i<= 10; i++) {
             fact *= i;
         }
         System.out.println ("Iterative solution for the factorial of 5: " + fact);

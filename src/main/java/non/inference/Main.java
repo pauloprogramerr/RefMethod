@@ -21,7 +21,7 @@ public class Main {
         System.out.println (recursiveSum(20));
 
         ConvertingLoopToRecursiveSolution cs = new ConvertingLoopToRecursiveSolution ();
-        cs.CommomLoop ();
+//        cs.CommomLoop ();
 
         UnderstandingNonInference n = new UnderstandingNonInference ();
         n.understandCopyOnWriteArrayList ();

@@ -43,4 +43,9 @@ public class MergingTwoLists {
 
          return list3;
     }
+
+    public static void main(String[] args) {
+        MergingTwoLists m = new MergingTwoLists ();
+        m.passList ();
+    }
 }

@@ -12,7 +12,7 @@ public class UnderstandingStatelessOperations {
             try {
                 Thread.sleep(500);
             } catch (InterruptedException ex) {
-                // Handle exception
+                // Handle exception (Execuçã imcompleta finalizá-la)
             }
         } else {
             rate = 30;

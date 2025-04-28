@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 
 public class UnderstandingNonInference {
     private int totalHours;
+
     static List<Integer> hours = new ArrayList<>(
             Arrays.asList(
                     32, 40, 54, 23, 35, 48, 40, 40, 23,
@@ -19,9 +20,7 @@ public class UnderstandingNonInference {
      * This will generate a ConcurrentModificationException exception, since we are
      * trying to modify an ArrayList instance, which is not thread safe
      */
-    public /* int */  void understandNonInference() {
-
-
+    public void understandNonInference() {
 
         Stream<Integer> hoursStream;
         hoursStream = hours.parallelStream();
@@ -34,7 +33,6 @@ public class UnderstandingNonInference {
                     return amount;
                 }).reduce(0, Integer::sum); // estava (r, s) -> r + s
 
-        //return totalHours;
     }
 
     /*
@@ -101,11 +99,5 @@ public class UnderstandingNonInference {
             //    .sorted ()
                 .forEach (h -> System.out.println (h + " "));
         System.out.println ();
-    }
-
-    public static void main(String[] args) {
-        UnderstandingNonInference u = new UnderstandingNonInference();
-        int total = u.understandCopyOnWriteArrayList();
-        System.out.println ("Total: " + total);
     }
 }

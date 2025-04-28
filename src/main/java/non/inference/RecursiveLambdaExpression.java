@@ -30,11 +30,11 @@ public class RecursiveLambdaExpression {
         }
         else {
 
-            /* return numbers[index] + arrayTotal (numbers, index - 1); */
-            // operador pos-decremento
-            // return numbers[index] + arrayTotal (numbers, index--);
+            /* return numbers[index] + arrayTotal (numbers, index - 1);
+             operador pos-decremento
+             return numbers[index] + arrayTotal (numbers, index--);
 
-            // operador pre-decremento
+             operador pre-decremento */
                return numbers[index] + arrayTotal (numbers, --index);
             // This will produce the correct answer
 

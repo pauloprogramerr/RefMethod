@@ -4,7 +4,7 @@ public class UsingTheHeadAndTailRecursion {
 
     public void inOrder(Node node){
         if (node == null){
-            System.out.println("estava return");
+            System.out.println("returnar null");
         } else {
             inOrder (node.left ());
             System.out.print (node.getValue () + " ");

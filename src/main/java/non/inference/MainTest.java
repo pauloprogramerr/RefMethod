@@ -22,7 +22,7 @@ public class MainTest {
         testTestando ();
 
         MergingTwoLists mg = new MergingTwoLists ();
-        mg.passList ();
+//        mg.passList ();
         System.out.println ();
 
         RecursiveLambdaExpression re = new RecursiveLambdaExpression ();

@@ -25,4 +25,11 @@ public class TailCallOptimization {
     public long factorialTail(long n) {
        return factorialHelper (n, 1);
     }
+
+    public static void main(String[] args) {
+        TailCallOptimization t = new TailCallOptimization();
+        System.out.println (t.gcd (48, 72));
+        t.factorialTail (5);
+        t.factorial (5);
+    }
 }

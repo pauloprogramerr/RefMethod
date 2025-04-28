@@ -120,5 +120,6 @@ public class Node {
         System.out.println (tree);
         System.out.println (pow (9, 5));
         new Node(tree);
+        // fazer outro main para executar este arquivo
     }
 }
