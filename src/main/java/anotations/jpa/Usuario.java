@@ -42,22 +42,3 @@ public class Usuario {
     @OneToMany
     private List<Pedidos> pedidos;
 }
-
-@Entity
-class Pedidos {
-
-    @Id
-
-    private long id;
-
-    @ManyToOne
-    @JoinColumn(name = "usuario_id")
-    private Usuario usuario;
-}
-
-@Embeddable
-class Endereco {
-
-    private String rua;
-    private String cidade;
-}

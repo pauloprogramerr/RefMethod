@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 public class UsuarioController {
 
     @Autowired
-    private Usuarioservice usuarioservice;
+    private UsuarioService usuarioservice;
 
     @GetMapping("/usuarios") // Define o método HTTP e o caminho do endpoint.
     public String listarUsuario () {
@@ -26,9 +26,3 @@ public class UsuarioController {
 }
 
 
-@Service
-class Usuarioservice {
-    public String obterUsusario() {
-        return "Usuário obtido com sucesso";
-    }
-}
