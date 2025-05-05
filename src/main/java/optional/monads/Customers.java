@@ -30,28 +30,30 @@ public class Customers {
             return Optional.empty ();
         }
     }
+
+
     //An alternate shorter implementation of the findOptionalCustomerWithID method
     //follows using the ofNullable method
     public Optional<Customer> findOptionalCustomerWithId2(int id) {
-        return Optional.ofNullable (customers.get (id));
+
+        return Optional
+                .ofNullable (customers.get (id));
     }
 
-    public static void main(String[] args) {
 
-        Customer customer1 = new Customer(123, "Sue");
-        Customer customer2 = new Customer(456, "Bob");
-        Customer customer3 = new Customer(789, "Mary");
-        Customer defaultCustomer = new Customer(0, "Default");
-        Customers customers = new Customers();
-        customers.addCustomer(defaultCustomer.getId(),
-                defaultCustomer);
-        customers.addCustomer(customer1.getId(), customer1);
-        customers.addCustomer(customer2.getId(), customer2);
-        customers.addCustomer(customer3.getId(), customer3);
+    public static void avoidsIfElse (Customers customerss, int id, Customer defaultCustomer) {
+        /*  The Optional class's
+            orElse method can be used for the same purpose and avoids the if statement.
+            The following statement is used to return the defaultCustomer instance when
+            findOptionalCustomerWithID doesn't return a customer
+         */
+        Customer current = customerss
+                .findOptionalCustomerWithId(id)
+                .orElse (defaultCustomer);
 
-        Customer customer = new Customer(); // foi adicionado para amenizar o erro
-        if (customer.getName().equals("Mary")) { // fazer a correção
-            System.out.println("Processing Mary");
-        }
+        current = customerss
+                .findOptionalCustomerWithId(id)
+                .orElseGet (() ->
+                        customerss.findOptionalCustomerWithId (0).get ());
     }
 }
