@@ -1,5 +1,8 @@
 package optional.monads;
 
+import lombok.Setter;
+
+@Setter
 public class Customer {
     private int id;
     private String name;

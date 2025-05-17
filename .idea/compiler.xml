@@ -10,5 +10,6 @@
         <module name="Java_Functional_Programing" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="24" />
   </component>
 </project>

@@ -3,7 +3,7 @@ package non.inference;
 import java.util.stream.Stream;
 
 public class MainTest {
-    private String m;
+    private final String m;
     public MainTest (String m) {
        this.m = m;
     }

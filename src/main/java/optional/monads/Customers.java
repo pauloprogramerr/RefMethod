@@ -1,10 +1,12 @@
 package optional.monads;
 
+import exceptionss.NoCustomerFoundException;
+
 import java.util.HashMap;
 import java.util.Optional;
 
 public class Customers {
-    private HashMap<Integer, Customer> customers;
+    private static HashMap<Integer, Customer> customers;
 
     public Customers() {
         customers = new HashMap<>();
@@ -36,6 +38,7 @@ public class Customers {
     //follows using the ofNullable method
     public Optional<Customer> findOptionalCustomerWithId2(int id) {
 
+
         return Optional
                 .ofNullable (customers.get (id));
     }
@@ -51,9 +54,13 @@ public class Customers {
                 .findOptionalCustomerWithId(id)
                 .orElse (defaultCustomer);
 
+
         current = customerss
                 .findOptionalCustomerWithId(id)
                 .orElseGet (() ->
                         customerss.findOptionalCustomerWithId (0).get ());
+
+        NoCustomerFoundException.foungException (customerss, id);
+        OptionalSolutionToTheCustomerProblem.theCustonerProblem (customerss, current, id);
     }
 }
